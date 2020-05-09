@@ -22,56 +22,56 @@ class Item {
   Color get availabilityColor => inStock ? Colors.grey : Colors.red;
 
   static final formatter =
-      NumberFormat.currency(locale: 'id_ID', symbol: "Rp ");
+      NumberFormat.currency(locale: 'en_US', symbol: "\$");
 
   static List<Item> get dummyItems => [
         Item(
             id: "1",
-            name: "iPhone X🅁 (Product RED)             ",
-            description: 'More magical than ever.',
-            price: 12499999,
+            name: "HP OMEN X 2S",
+            description: 'OMEN X 2S by HP 2019 15-inch Gaming Laptop With Secondary Touchscreen Display, Intel i7-9750H, NVIDIA RTX 2070 With Max-Q 8 GB, 16 GB RAM, 512 GB SSD, VR/MR Ready, Windows 10 Home (15-dg0010nr, Black).',
+            price: 1898,
             inStock: true,
             imageUrl:
-                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone/xr/iphone-xr-red-select-201809?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1551226038669'),
+                'https://images-na.ssl-images-amazon.com/images/I/715-zfPfltL._AC_SL1500_.jpg'),
         Item(
             id: "2",
-            name: "AirPods with Wireless Charging Case",
-            description: 'More magical than ever.',
-            price: 2999999,
+            name: "HP EliteBook W4Z96AW",
+            description: 'HP EliteBook W4Z96AW Laptop (Windows 10 Pro, Intel Core I5-6300U, 14" LED Screen, Storage: 32 GB, RAM: 8 GB) Silver.',
+            price: 2131,
             inStock: true,
             imageUrl:
-                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/M/RX/MRXJ2/MRXJ2?wid=1144&hei=1144&fmt=jpeg&qlt=95&op_usm=0.5%2C0.5&.v=1551489675083'),
+                'https://images-na.ssl-images-amazon.com/images/I/816ZrbuR4oL._AC_SL1500_.jpg'),
         Item(
             id: "3",
-            name: "iPhone X🅂 Max (GOLD)",
-            description: 'More magical than ever.',
-            price: 18999999,
+            name: "HP 3YE08UT#ABA Promo ZB14uG5",
+            description: 'HP 3YE08UT#ABA Promo ZB14uG5 Intel i7-8550U 4 GHz Laptop, 8 GB RAM, Windows 10 Pro.',
+            price: 1779,
             inStock: true,
             imageUrl:
-                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone/xs/iphone-xs-max-gold-select-2018?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1550795409154'),
+                'https://images-na.ssl-images-amazon.com/images/I/81OXqnO5zzL._AC_SL1500_.jpg'),
         Item(
             id: "4",
-            name: "iPhone X🅂 (SILVER)",
-            description: 'More magical than ever.',
-            price: 14999999,
+            name: "HP Elitebook 745 G5 Laptop PC",
+            description: 'HP Elitebook 745 G5 Laptop PC with AMD Ryzen 7 2700U Quad Core CPU, 16GB DDR4 RAM, 512GB NVMe SSD, 14 Inch FHD Touchscreen Display, Windows 10 Pro, (Laptop, 16GB RAM, 512GB SSD).',
+            price: 1333,
             inStock: true,
             imageUrl:
-                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone/xs/iphone-xs-silver-select-2018?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1550795411708'),
+                'https://images-na.ssl-images-amazon.com/images/I/61MbiFIvilL._AC_SL1000_.jpg'),
         Item(
             id: "5",
-            name: "iPad Pro (SPACE GRAY)",
-            description: 'More magical than ever.',
-            price: 13999999,
+            name: "Samsung 2018 Galaxy Book 12",
+            description: 'Samsung 2018 Galaxy Book 12" FHD+ 2-in-1 Touchscreen Laptop, Intel Core i5-7200U up to 3.1GHz 8GB RAM 256GB SSD Bluetooth 4.1 USB Type-C Win 10 Pro.',
+            price: 1999,
             inStock: true,
             imageUrl:
-                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/i/pa/ipad/pro/ipad-pro-11-select-cell-spacegray-201810?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1540591731427'),
+                'https://images-na.ssl-images-amazon.com/images/I/51iv5CbxpKL._AC_SL1000_.jpg'),
         Item(
             id: "6",
-            name: "Apple Watch Silver Aluminum (44 mm)",
-            description: 'More magical than ever.',
-            price: 8999999,
+            name: "Samsung Notebook Odyssey Z",
+            description: 'Samsung Notebook Odyssey Z 15.6” – Laptop – Intel i7 – 16GB Memory – 256GB SSD – Light Titan.',
+            price: 1630,
             inStock: false,
             imageUrl:
-                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/image/AppleInc/aos/published/images/4/4/44/alu/44-alu-silver-sport-white-s4-1up?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1539190366920'),
+                'https://images-na.ssl-images-amazon.com/images/I/61UEhJO5UXL._AC_SL1000_.jpg'),
       ];
 }

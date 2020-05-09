@@ -64,7 +64,7 @@ class _ShopListState extends State<ShopListWidget> {
     return Scaffold(
         key: _scaffoldKey,
         appBar: AppBar(
-          title: Text("Apple Store"),
+          title: Text("Best Notebook Store"),
         ),
         body: GridView.count(
           childAspectRatio: width / height,
