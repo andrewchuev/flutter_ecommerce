@@ -18,8 +18,7 @@ class _ShopListState extends State<ShopListWidget> {
 
   @override
   Widget build(BuildContext context) {
-    final columnCount =
-        MediaQuery.of(context).orientation == Orientation.portrait ? 2 : 4;
+    final columnCount = MediaQuery.of(context).orientation == Orientation.portrait ? 2 : 4;
 
     final width = MediaQuery.of(context).size.width / columnCount;
     const height = 400;
@@ -64,7 +63,7 @@ class _ShopListState extends State<ShopListWidget> {
     return Scaffold(
         key: _scaffoldKey,
         appBar: AppBar(
-          title: Text("Best Notebook Store"),
+          title: Text("Best Notebooks Store"),
         ),
         body: GridView.count(
           childAspectRatio: width / height,
@@ -99,9 +98,8 @@ class _ShopListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     Border border;
     if (isSideLine) {
-      border = Border(
-          bottom: BorderSide(color: Colors.grey, width: 0.5),
-          right: BorderSide(color: Colors.grey, width: 0.5));
+      border =
+          Border(bottom: BorderSide(color: Colors.grey, width: 0.5), right: BorderSide(color: Colors.grey, width: 0.5));
     } else {
       border = Border(bottom: BorderSide(color: Colors.grey, width: 0.5));
     }
@@ -128,28 +126,22 @@ class _ShopListItem extends StatelessWidget {
                 ),
                 Text(item.name,
                     textAlign: TextAlign.center,
-                    style: Theme.of(context)
-                        .textTheme
-                        .title
-                        .apply(fontSizeFactor: 0.8)),
+                    style: Theme.of(context).textTheme.headline6.apply(fontSizeFactor: 0.8)),
                 Padding(
                   padding: EdgeInsets.only(top: 16),
                 ),
                 Text(item.formattedPrice,
                     textAlign: TextAlign.center,
-                    style: Theme.of(context)
-                        .textTheme
-                        .subhead
-                        .apply(fontSizeFactor: 0.8)),
+                    style: Theme.of(context).textTheme.headline6.apply(fontSizeFactor: 0.8)),
                 Padding(
                   padding: EdgeInsets.only(top: 16),
                 ),
                 Text(this.isInCart ? "In Cart" : item.formattedAvailability,
                     textAlign: TextAlign.center,
-                    style: Theme.of(context).textTheme.caption.apply(
-                        fontSizeFactor: 0.8,
-                        color:
-                            isInCart ? Colors.blue : item.availabilityColor)),
+                    style: Theme.of(context)
+                        .textTheme
+                        .caption
+                        .apply(fontSizeFactor: 0.8, color: isInCart ? Colors.blue : item.availabilityColor)),
               ],
             )));
   }
